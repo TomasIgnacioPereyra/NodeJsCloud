@@ -1,6 +1,9 @@
+//funcion para simular procesos largos
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+//funcion para medir tiempo de ejecución 
 async function Timer(callback, name) {
     console.time(name);
     await callback;
@@ -36,6 +39,7 @@ class McDonalds {
 
 const sucursalMc = new McDonalds();
 
+//Funcion secuencial pedidos McDonalds
 const secuencial = async () => {
     console.log("Iniciando pedido de combo...");
     await sucursalMc.HacerHamburguesa();
