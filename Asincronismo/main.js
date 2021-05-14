@@ -12,7 +12,6 @@ async function Timer(callback, name) {
 
 class McDonalds {
     constructor() {
-
     }
     async PedirCombo() {
         console.log("Iniciando pedido de combo...");
