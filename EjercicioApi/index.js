@@ -15,7 +15,6 @@ Promise.all(requests).then(responses => {
 
     helperBtc.GetValueBtc(valorBtc, valorDolar, helperBtc.EnumMoney.usd);
 
-
 }).catch(x => console.log(x));
 
 
